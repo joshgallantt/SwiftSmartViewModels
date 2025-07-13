@@ -1,6 +1,17 @@
-# SwiftSmartViewModels
+<div align="center">
 
-SwiftSmartViewModels is a lightweight, protocol-driven library for building robust, composable ViewModels in SwiftUI and UIKit apps. It is designed to work naturally with SwiftUI patterns, including ObservableObject and @Published, not against them.
+<h1>SwiftSmartViewModels</h1>
+
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%2016%2B%20%7C%20iPadOS%2016%2B%20%7C%20macOS%2013%2B%20%7C%20watchOS%209%2B%20%7C%20tvOS%2016%2B%20%7C%20visionOS%201%2B-blue.svg?style=flat)](#requirements)
+<br>
+
+[![Swift](https://img.shields.io/badge/Swift-5.9%2B-orange.svg?style=flat)](https://swift.org)
+[![SPM ready](https://img.shields.io/badge/SPM-ready-brightgreen.svg?style=flat-square)](https://swift.org/package-manager/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
+</div>
+
+Lets you build composable, protocol-driven ViewModels that work naturally with SwiftUI, UIKit, and Combine, using idiomatic ObservableObject patterns.
 
 ## <br><br> Features
 - Protocols for handling state (`StateViewModel`) and one-off effects (`EventViewModel`)
