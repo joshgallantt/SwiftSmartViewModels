@@ -11,7 +11,7 @@
 
 </div>
 
-Lets you build composable, protocol-driven ViewModels that work naturally with SwiftUI, UIKit, and Combine, using idiomatic ObservableObject patterns.
+Protocols for ViewModels that support State containers and Event Emission.
 
 ## <br><br> Features
 - Protocols for handling state (`StateViewModel`) and one-off effects (`EventViewModel`)
