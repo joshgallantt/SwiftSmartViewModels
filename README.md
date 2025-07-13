@@ -32,7 +32,7 @@ targets: [
 
 ## <br><br> Usage
 
-### StateViewModel — Designed for SwiftUI
+### StateViewModel — A container for your state properties
 
 ```Swift
 struct CounterState {
@@ -71,7 +71,6 @@ struct CounterView: View {
 ### EventViewModel — One-Off Effects, SwiftUI-Friendly
 
 ```Swift
-protocol ViewModelEvent {}
 struct LoginSucceeded: ViewModelEvent {}
 struct LoginFailed: ViewModelEvent { let message: String }
 
@@ -172,7 +171,7 @@ final class ChildViewModel: EventViewModel, ObservableObject {
 }
 ```
 
-##### <br> ** Call order ** 
+### **Call order:**
 
 1. `ParentView` renders and subscribes to `child.eventPublisher`.
 2. User taps "Send to child" button.
@@ -277,13 +276,6 @@ struct ChildBView: View {
 7. `ChildBViewModel` emits an `ExampleEvent` via its own `eventSubject`.
 8. `ChildBView` listens to `viewModel.eventPublisher` via `.onReceive`, receives the event, and updates its UI (`lastEvent`).
 
-## <br> Contributing
-
-We welcome contributions, feature suggestions, and bug reports.
-
-* Target Swift 5.9+
-* Prefer actor-based, concurrency-safe implementations
-* Include tests for new features
 
 ## <br> License
 
